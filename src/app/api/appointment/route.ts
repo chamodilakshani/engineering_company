@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 import { saveAppointment, AppointmentRecord } from "@/lib/appointments";
 
-const COMPANY_WHATSAPP_NUMBER = "94751665314"; // 075 1665 314 in international format
+const COMPANY_WHATSAPP_NUMBER = "94782311965"; // 075 1665 314 in international format
 const COMPANY_EMAIL = "mihisaragamage07@gmail.com";
 const SMTP_HOST = process.env.SMTP_HOST;
 const SMTP_PORT = process.env.SMTP_PORT ? Number(process.env.SMTP_PORT) : undefined;
