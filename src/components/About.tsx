@@ -83,12 +83,7 @@ export default function About() {
               excavation equipment, Mihisara built Meeya Engineering on a
               simple principle: repair it right the first time.
             </p>
-            <p>
-              Trained on German engineering standards, he brings precision
-              diagnostics and tight tolerances to work that's usually rushed —
-              from hydraulic cylinder rebuilds to full excavator overhauls,
-              line boring, and custom lathe work.
-            </p>
+            
           </div>
 
           <div className="mt-8 grid sm:grid-cols-2 gap-4">
@@ -105,7 +100,7 @@ export default function About() {
               <BadgeCheck className="text-hydra shrink-0" size={22} />
               <div>
                 <p className="font-semibold text-white text-sm">
-                  German-Tech Expertise
+                  NAITA Certified in Welding
                 </p>
                 <p className="text-xs text-steel">Precision-first repairs</p>
               </div>
