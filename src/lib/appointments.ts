@@ -52,7 +52,7 @@ export async function getAppointments(): Promise<{
   if (supabase) {
     try {
       const { data, error } = await supabase
-        .from<AppointmentRecord>("appointments")
+        .from<AppointmentRecord, AppointmentRecord>("appointments")
         .select("id, fullName, phone, vehicleModel, service, date, createdAt")
         .order("createdAt", { ascending: false });
       if (error) {

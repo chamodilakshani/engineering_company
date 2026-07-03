@@ -35,24 +35,23 @@ export default function AdminLoginPage() {
         <h1 className="text-3xl font-extrabold mb-4">Admin Login</h1>
         <p className="text-steel mb-6">Enter the admin password to view appointment records.</p>
         <form onSubmit={handleSubmit} className="space-y-5">
-          <div>
-            <label className="block text-sm font-semibold text-white mb-2">Password</label>
-            <input
-              type="password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-              className="w-full rounded-2xl bg-base border border-white/10 px-4 py-3 text-white outline-none focus:border-gold"
-            />
-          </div>
-          {error && <p className="text-sm text-red-400">{error}</p>}
-          <button
-            type="submit"
-            disabled={loading}
-            className="w-full rounded-full bg-gold px-5 py-3 font-bold text-black hover:brightness-110 transition"
-          >
-            {loading ? "Logging in..." : "Sign in"}
-          </button>
-        </form>
+  <div>
+    <label className="block text-sm font-semibold text-white mb-2">
+      Password
+    </label>
+    <input
+
+      type="password"
+      value={password}
+      onChange={(event) => setPassword(event.target.value)}
+      className="w-full rounded-2xl bg-base border border-white/10 px-4 py-3 text-white outline-none focus:border-gold"
+     />
+  </div>
+  {error && <p className="text-sm text-red-400">{error}</p>}
+  <button type="submit">
+    Submit
+  </button>
+</form>
       </div>
     </main>
   );
